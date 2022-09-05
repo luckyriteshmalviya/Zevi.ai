@@ -1,0 +1,42 @@
+.secondPage {
+  margin-top: 6em;
+  display: flex;
+}
+
+.ProductSection {
+  /* background-color: lightgray; */
+  width: 78%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: rgb(236, 236, 236);
+  position: relative;
+  width: 220px;
+  margin: 0.8em;
+  position: relative;
+}
+
+.product:hover .viewProduct {
+  display: block;
+}
+.product:hover .productDetails {
+  opacity: 0.2;
+}
+.viewProduct {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgb(158, 106, 207);
+  opacity: 0.8;
+  padding: 1em;
+  width: 85%;
+  display: none;
+  z-index: 100;
+  color: black;
+}
+
+.button {
+  background-color: lightgray;
+}

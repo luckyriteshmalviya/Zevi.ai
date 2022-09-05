@@ -1,29 +1,68 @@
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
 .mainContainer {
-  /* width: 20vw; */
-  /* height: 90vh; */
   position: relative;
-  top: 40px;
-  border: 1px solid black;
-}
-
-.searchSection {
-  position: absolute;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  top: 80px;
-  left: 40%;
-}
-
-.SearchBar {
-  width: 50%;
-  outline: none;
-  border-radius: 0.6em;
-  /* border: none; */
-  padding: 1em;
 }
 
 .background {
-  width: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  font-weight: 700;
+  background-color: black;
+  padding: 0.6em;
+  opacity: 0.7;
+  border-radius: 0.3em;
+  color: white;
+}
+
+.frontData {
+  position: absolute;
+  top: 26%;
+  left: 25%;
+}
+
+.searchBar {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 0.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 35vw;
+  box-shadow: 2px 3px 10px 0px;
+  padding: 0.2em 0.6em;
+}
+
+.searchInput {
+  border: none;
+  padding: 1em;
+  outline: none;
+  border-radius: 0.6em;
+  width: 30vw;
+}
+
+.bx {
+  font-size: 2em;
+}
+
+#suggestionBox {
+  margin-top: 0.6em;
+  display: none;
+  border: 1px solid lightgray;
+  border: none;
+  text-align: left;
+  padding: 1em;
+  background-color: white;
 }
