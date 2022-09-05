@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Fetch from "./components/Fetch";
+import BackgroundImage from "./assets/BackgroundImage.jpg";
 
 function App() {
+  const [search, setSearch] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mainContainer">
+      <div>
+        <img
+          className="background"
+          src={BackgroundImage}
+          alt="backgroundImage"
+        />
+      </div>
+      <div className="searchSection">
+        <input
+          className="SearchBar"
+          type="text"
+          placeholder="Search here.."
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        />
+      </div>
+      {search}
     </div>
   );
 }
